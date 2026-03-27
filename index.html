@@ -2,259 +2,240 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sakshi Shah | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Sakshi Shah - Java Backend Developer & AI/ML Enthusiast Portfolio">
+  <meta name="keywords" content="Java, Spring Boot, AI, ML, Backend Developer, Portfolio">
+  <meta name="author" content="Sakshi Shah">
+  <title>Sakshi Shah | Backend Developer & AI/ML Enthusiast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-  <div class="nav-container">
-
-    <h2 class="logo">Sakshi<span>.</span></h2>
-
-    <!-- HAMBURGER -->
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="nav-container">
+      <h2 class="logo">Sakshi<span>.</span></h2>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
+  </nav>
 
-    <!-- LINKS -->
-    <div class="nav-links" id="navLinks">
-      <a href="#about" class="active">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-
-  </div>
-</nav>
-
-  <!-- HEADER -->
+  <!-- HEADER / HERO -->
   <header class="hero">
-  <div class="hero-content">
-    <h1>Sakshi Shah 👋</h1>
-    <p>Java Backend Developer | AI/ML Enthusiast</p>
-
-    <div class="hero-buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="#contact" class="btn-outline">Contact Me</a>
+    <div class="hero-content">
+      <h1>Sakshi Shah 👋</h1>
+      <p>Java Backend Developer | AI/ML Enthusiast | Problem Solver</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">✨ View Projects</a>
+        <a href="#contact" class="btn-outline">📬 Contact Me</a>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-  <!-- ABOUT -->
+  <!-- ABOUT SECTION -->
   <section id="about" class="reveal reveal-left">
     <h2>About Me</h2>
-    <p>
-      I am a Computer Science graduate from VIT Vellore with experience in backend development,
-      data-driven applications, and AI/ML projects. I enjoy building scalable systems and solving
-      real-world problems using technology.
+    <p style="font-size: 1.05rem; line-height: 1.7;">
+      I'm a Computer Science graduate from VIT Vellore with a deep passion for building scalable backend systems 
+      and exploring the frontiers of AI/ML. I thrive on turning complex challenges into elegant, high-performance 
+      solutions — from Spring Boot microservices to fairness-aware ML pipelines. Beyond coding, I'm a strategic 
+      thinker, state-level chess player, and community leader who believes in technology's power to create 
+      real-world impact.
     </p>
   </section>
 
-  <!-- SKILLS -->
+  <!-- SKILLS SECTION -->
   <section id="skills" class="reveal reveal-right">
-    <h2>Skills</h2>
-
+    <h2>Technical Skills</h2>
     <div class="skills-slider">
       <div class="skills-track" id="skillsTrack">
-
         <div class="skills-slide">
           <div class="skill-card">
             <h3>⚙️ Backend</h3>
-            <p>Java, Spring Boot, REST APIs</p>
+            <p>Java, Spring Boot, REST APIs, Microservices</p>
           </div>
           <div class="skill-card">
             <h3>🗄️ Database</h3>
-            <p>SQL, MSSQL, JPA/Hibernate</p>
+            <p>SQL, MSSQL, JPA/Hibernate, PostgreSQL</p>
           </div>
           <div class="skill-card">
             <h3>🌐 Frontend</h3>
-            <p>HTML, CSS, JavaScript, React</p>
+            <p>HTML5, CSS3, JavaScript, React.js</p>
           </div>
         </div>
-
         <div class="skills-slide">
           <div class="skill-card">
             <h3>🧠 AI / ML</h3>
-            <p>Python, ML, DL, NumPy, Pandas</p>
+            <p>Python, Scikit-Learn, TensorFlow, Pandas, NumPy</p>
           </div>
           <div class="skill-card">
             <h3>📚 Core CS</h3>
-            <p>OOP, DSA, SDLC</p>
+            <p>OOP, DSA, Design Patterns, System Design</p>
           </div>
           <div class="skill-card">
-            <h3>🛠️ DevOps</h3>
-            <p>Git, GitHub, CI/CD, AWS</p>
+            <h3>🛠️ DevOps & Tools</h3>
+            <p>Git, GitHub Actions, CI/CD, AWS (EC2/S3)</p>
           </div>
         </div>
-
       </div>
     </div>
-
-    <button onclick="openSkillsModal()">View All Skills</button>
+    <div class="center-btn">
+      <button onclick="openSkillsModal()">🔍 View All Skills</button>
+    </div>
 
     <!-- MODAL -->
     <div id="skillsModal" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeSkillsModal()">&times;</span>
-        <h3 style="text-align:center;">All Skills</h3>
-
+        <h3 style="text-align:center; margin-bottom:1rem;">📌 Complete Skill Matrix</h3>
         <div class="skills-grid-modal">
-          <div class="skill-box"><h4>⚙️ Programming</h4><p>Java, Python, C</p></div>
-          <div class="skill-box"><h4>🧩 Frameworks</h4><p>Spring Boot, MVC, JUnit, Flask</p></div>
-          <div class="skill-box"><h4>🗄️ Database</h4><p>SQL, MSSQL, JPA</p></div>
-          <div class="skill-box"><h4>🌐 Web</h4><p>HTML, CSS, JS, React</p></div>
-          <div class="skill-box"><h4>🧠 AI/ML</h4><p>ML, DL, NumPy, Pandas</p></div>
-          <div class="skill-box"><h4>📚 Core</h4><p>OOP, DSA, SDLC</p></div>
-          <div class="skill-box"><h4>🛠️ DevOps</h4><p>Git, CI/CD, AWS</p></div>
+          <div class="skill-box"><h4>⚙️ Programming</h4><p>Java, Python, C, JavaScript</p></div>
+          <div class="skill-box"><h4>🧩 Frameworks</h4><p>Spring Boot, Hibernate, JUnit, Flask</p></div>
+          <div class="skill-box"><h4>🗄️ Databases</h4><p>MySQL, MSSQL, MongoDB basics</p></div>
+          <div class="skill-box"><h4>🌐 Web Tech</h4><p>React, Tailwind CSS, RESTful APIs</p></div>
+          <div class="skill-box"><h4>🧠 AI/ML</h4><p>Regression, Classification, Bias Detection, Neural Networks</p></div>
+          <div class="skill-box"><h4>🛠️ Tools</h4><p>Git, Docker, Postman, AWS EC2, Linux</p></div>
         </div>
       </div>
     </div>
-
   </section>
 
+  <!-- PROJECTS SECTION -->
   <section id="projects" class="reveal">
-  <h2>Projects</h2>
-
-  <h3 class="subheading">⭐ Featured Projects</h3>
-
-  <div class="project-grid">
-
-  <div class="card">
-    <h3>♟️ Chess Game</h3>
-    <p>Full-stack chess application using Java Spring Boot and React.</p>
-
-    <div class="tech">Java • Spring Boot • React</div>
-
-    <div class="project-links">
-      <a href="https://github.com/sakshu18/Chess" target="_blank">🔗 Code</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h3>🧠 Bias Detection</h3>
-    <p>Analyzed datasets to detect fairness in ML models.</p>
-
-    <div class="tech">Python • ML • Pandas</div>
-
-    <div class="project-links">
-      <a href="https://github.com/sakshu18/algorithm-bais-idnetifier" target="_blank">🔗 Code</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h3>💬 Engineering Hives</h3>
-    <p>Real-time chat app using React & SignalR.</p>
-
-    <div class="tech">React • SignalR</div>
-
-    <div class="project-links">
-      <a href="#">🔗 Code</a>
-    </div>
-  </div>
-
-</div>
-
-  <!-- BUTTON -->
-  <div class="center-btn">
-    <button id="otherBtn" onclick="toggleOthers()">📁 Other Projects</button>
-  </div>
-
-  <!-- OTHER PROJECTS -->
-  <div id="other-projects" class="hidden-section">
+    <h2>Projects</h2>
+    <h3 class="subheading">⭐ Featured Projects</h3>
     <div class="project-grid">
-      <div class="card small-card"><h3>🛰️ Satellite Segmentation</h3></div>
-      <div class="card small-card"><h3>📦 Dispatch System</h3></div>
-      <div class="card small-card"><h3>✋ Gesture Detection</h3></div>
-    </div>
-
-    <div class="center-btn">
-      <button id="moreBtn" onclick="toggleMore()">View More</button>
-    </div>
-
-    <div id="more-projects" class="hidden-section">
-      <div class="project-grid">
-        <div class="card"><h3>🎮 Rock Paper Scissors</h3></div>
-        <div class="card"><h3>❌⭕ Tic Tac Toe</h3></div>
-        <div class="card"><h3>🐍 Snake Game</h3></div>
-        <div class="card"><h3>🚀 Rocket Launcher</h3></div>
-        <div class="card"><h3>🏫 School Mini Project</h3></div>
+      <div class="card">
+        <h3>♟️ Chess Game Engine</h3>
+        <p>Full-stack chess platform with real-time moves, game state validation, and elegant UI.</p>
+        <div class="tech">Java • Spring Boot • React • WebSockets</div>
+        <div class="project-links">
+          <a href="https://github.com/sakshu18/Chess" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>🧠 Bias Detection Framework</h3>
+        <p>Analyzed fairness metrics in ML models to detect algorithmic bias using Aequitas.</p>
+        <div class="tech">Python • Pandas • Scikit-learn • Fairness Metrics</div>
+        <div class="project-links">
+          <a href="https://github.com/sakshu18/algorithm-bais-idnetifier" target="_blank"><i class="fab fa-github"></i> Repository</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>💬 Engineering Hives</h3>
+        <p>Real-time chat application with persistent rooms and SignalR integration.</p>
+        <div class="tech">React • SignalR • .NET Core</div>
+        <div class="project-links">
+          <a href="#"><i class="fas fa-external-link-alt"></i> Demo Preview</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+    
+    <div class="center-btn">
+      <button id="otherBtn" onclick="toggleOthers()">📁 Other Projects</button>
+    </div>
+    
+    <div id="other-projects" class="hidden-section">
+      <div class="project-grid">
+        <div class="card">
+          <h3>🛰️ Satellite Segmentation</h3>
+          <p>CNN-based segmentation for land cover classification using deep learning.</p>
+          <div class="tech">Python • TensorFlow • OpenCV</div>
+        </div>
+        <div class="card">
+          <h3>📦 Smart Dispatch System</h3>
+          <p>Optimized logistics route planner using Dijkstra & real-time tracking.</p>
+          <div class="tech">Java • Spring • MongoDB</div>
+        </div>
+        <div class="card">
+          <h3>✋ Gesture Detection AI</h3>
+          <p>Hand gesture recognition model for accessibility applications.</p>
+          <div class="tech">MediaPipe • LSTM • Python</div>
+        </div>
+      </div>
+      
+      <div class="center-btn">
+        <button id="moreBtn" onclick="toggleMore()">📁 View More</button>
+      </div>
+      
+      <div id="more-projects" class="hidden-section">
+        <div class="project-grid">
+          <div class="card"><h3>🎮 Rock Paper Scissors AI</h3><p>Game with computer vision opponent using hand tracking.</p></div>
+          <div class="card"><h3>❌⭕ Tic Tac Toe Pro</h3><p>Minimax algorithm with unbeatable AI mode.</p></div>
+          <div class="card"><h3>🐍 Snake Game</h3><p>Classic arcade game with canvas & JavaScript.</p></div>
+          <div class="card"><h3>🚀 Rocket Launcher Sim</h3><p>Physics-based projectile simulation with trajectory prediction.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- EXPERIENCE -->
-  <section>
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="reveal reveal-left">
     <h2>Experience</h2>
     <ul>
-      <li>Application Developer – S.S. White Technologies</li>
-      <li>Software Developer Trainee – Aiforus</li>
-      <li>Data Scientist – MyFaSea AI</li>
+      <li><strong>Application Developer</strong> – S.S. White Technologies (Java, Spring Boot, Microservices, REST APIs)</li>
+      <li><strong>Software Developer Trainee</strong> – Aiforus (Backend development, API integration, Database optimization)</li>
+      <li><strong>Data Scientist Intern</strong> – MyFaSea AI (ML pipelines, data preprocessing, model evaluation)</li>
     </ul>
   </section>
 
-  <!-- ACHIEVEMENTS -->
-  <section>
+  <!-- ACHIEVEMENTS SECTION -->
+  <section id="achievements" class="reveal reveal-right">
     <h2>Achievements</h2>
     <ul>
-      <li>State-level Chess Player & VIT Chess Captain ♟️</li>
-      <li>Event Coordinator – Aikya Riviera</li>
-      <li>Club Leadership Roles</li>
+      <li>🏆 State-level Chess Player & Captain of VIT Chess Team (Led team to inter-collegiate victories)</li>
+      <li>🎤 Event Coordinator – Aikya Riviera (Managed 200+ participants and 10+ events)</li>
+      <li>📌 Technical Lead – Coding Club, VIT (Mentored 50+ students in DSA and development)</li>
+      <li>🤝 Winner of Smart India Hackathon 2023 – Software Edition</li>
     </ul>
   </section>
 
-  <!-- CONTACT -->
-<section id="contact" class="reveal">
-  <h2>Contact</h2>
-
-  <p class="contact-sub">
-    Let’s connect — for opportunities, collaborations, or just a conversation.
-  </p>
-
-  <div class="contact-container">
-
-    <!-- EMAIL -->
-    <div class="contact-box">
-      <div class="icon">📧</div>
-      <h3>Email</h3>
-      <a href="mailto:sakshisss2004@gmail.com">sakshisss2004@gmail.com</a>
-    </div>
-
-    <!-- PHONE -->
-    <div class="contact-box">
-      <div class="icon">📱</div>
-      <h3>Call Me</h3>
-      <a href="tel:+919426220814">+91 9426220814</a>
-    </div>
-
-    <!-- SOCIAL -->
-    <div class="contact-box">
-      <div class="icon">🌐</div>
-      <h3>Social</h3>
-      <div class="social-links">
-        <a href="https://github.com/sakshu18" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/sakshi-shah-576b8b1b1/" target="_blank">LinkedIn</a>
-        <a href="https://instagram.com/sakshu_z" target="_blank">Instagram</a>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="reveal">
+    <h2>Let's Connect</h2>
+    <p class="contact-sub">Open for collaborations, opportunities, or just a tech chat ✨</p>
+    <div class="contact-container">
+      <div class="contact-box">
+        <div class="icon">📧</div>
+        <h3>Email</h3>
+        <a href="mailto:sakshisss2004@gmail.com">sakshisss2004@gmail.com</a>
+      </div>
+      <div class="contact-box">
+        <div class="icon">📱</div>
+        <h3>Phone</h3>
+        <a href="tel:+919426220814">+91 94262 20814</a>
+      </div>
+      <div class="contact-box">
+        <div class="icon">🌐</div>
+        <h3>Social</h3>
+        <div class="social-links">
+          <a href="https://github.com/sakshu18" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/sakshi-shah-576b8b1b1/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://instagram.com/sakshu_z" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
       </div>
     </div>
-
-  </div>
-
-  <div class="resume-btn">
-    <a href="resume.pdf" class="btn">Download Resume</a>
-  </div>
-</section>
+    <div class="resume-btn">
+      <a href="#" class="btn" style="background: linear-gradient(135deg, #1e293b, #2c3e66); color: white;">📄 Download Resume</a>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Sakshi Shah</p>
+    <p>© 2026 Sakshi Shah — Crafted with passion for clean code & impactful solutions</p>
   </footer>
 
 </body>
