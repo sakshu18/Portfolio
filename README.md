@@ -3,7 +3,7 @@
 ![status](https://img.shields.io/badge/status-live-brightgreen)
 ![azure](https://img.shields.io/badge/hosted%20on-Azure-blue)
 
-🚀 **Live Demo:** https://happy-rock-0de587710.4.azurestaticapps.net
+🚀 **Live Demo:** https://portfolio-two-teal-38.vercel.app/
 
 This is my personal portfolio website showcasing my projects, skills, and experience.
 Deployed using **Azure Static Web Apps** with a CI/CD pipeline via **GitHub Actions**.
